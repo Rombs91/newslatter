@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10vh 50vh 50vh 50vh 10vh;
+  display: grid;
+  grid-template-areas:
+  'header header'
+  'foto1 cuadro1'
+  'cuadro2 foto2'
+  'foto3 cuadro3'
+  'footer footer'
+  ;
+}
+.foto1{
+  grid-area: foto1;
+  /* background-color: pink; */
+  background: url(../img/newsletter.png) no-repeat;
+  background-size: cover;
+}
+/* .foto1 img, .foto2 img, .foto3 img{
+  width: 10%;
+  height: 10%;
+} */
+.foto2{
+  grid-area: foto2;
+  /* background-color: aliceblue; */
+  background: url(../img/ecommerce.png) no-repeat;
+  background-size: cover;
+}
+.foto3{
+  grid-area: foto3;
+  /* background-color: aqua; */
+  background: url(../img/llm.png) no-repeat;
+  background-size: cover;
+}
+.cuadro1{
+  grid-area: cuadro1;
+  background-color: rgb(178, 72, 72);
+}
+
+.cuadro1, .cuadro2, .cuadro3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-decoration-color: orange;
+}
+.cuadro2{
+  grid-area: cuadro2;
+  background-color: rgb(88, 88, 165);
+}
+.cuadro3{
+  grid-area: cuadro3;
+  background-color: rgb(69, 138, 69);
+}
+header{
+  grid-area: header;
+  color: white;
+}
+footer{
+  grid-area: footer;
+  color: white;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  padding-top: 0.5vh;
+}
+footer>div button{
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: orange;
+  padding: 2vh 10vh;
+  font-size: 2rem;
+  color: white;
+}
+header, footer{
+  background-color: black;
+}
+
+.title {
+  font-family: 'Bebas Neue';
+  font-size: 4rem;
+  -webkit-text-fill-color: orange;
+  /* -webkit-text-stroke: 0.2px grey; */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 1vh;
+}
